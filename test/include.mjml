@@ -1,0 +1,10 @@
+<mjml>
+     <mj-body>
+       <mj-include path="./snippet.mjml" />
+       <mj-section>
+         <mj-column>
+           <mj-text>Main Content</mj-text>
+         </mj-column>
+       </mj-section>
+     </mj-body>
+   </mjml>
