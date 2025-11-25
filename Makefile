@@ -14,5 +14,4 @@ native:
       -jar target/app.jar \
       -H:Name=mjml-cli \
       --no-fallback \
-      --initialize-at-build-time \
-      -H:IncludeResources="ch/digitalfondue/mjml4j/.*"
+      --initialize-at-build-time
