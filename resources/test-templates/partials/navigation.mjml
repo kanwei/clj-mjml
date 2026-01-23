@@ -1,0 +1,6 @@
+<mj-navbar base-url="https://example.com" hamburger="hamburger" ico-color="#ffffff">
+  <mj-navbar-link href="/home" color="#ffffff">Home</mj-navbar-link>
+  <mj-navbar-link href="/about" color="#ffffff">About</mj-navbar-link>
+  <mj-navbar-link href="/products" color="#ffffff">Products</mj-navbar-link>
+  <mj-navbar-link href="/contact" color="#ffffff">Contact</mj-navbar-link>
+</mj-navbar>

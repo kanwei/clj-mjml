@@ -1,0 +1,5 @@
+<mj-text font-size="16px" color="#333333" line-height="1.6">
+  This is a reusable content block that can be included in multiple templates.
+  It demonstrates how mj-include works with filesystem-based templates.
+</mj-text>
+<mj-divider border-color="#cccccc" border-width="1px" />
