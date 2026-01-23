@@ -312,13 +312,6 @@ Creates a custom resolver using a provided loader function.
 $ clojure -T:build test
 ```
 
-## License
-
-Copyright © 2025 Kanwei Li
-
-Distributed under the MIT License.
-
-
 ### Building
 
 Run the project's CI pipeline and build a JAR:
@@ -348,3 +341,9 @@ $ clojure -T:build deploy
 ```
 
 Your library will be deployed to `com.github.kanwei/clj-mjml` on clojars.org.
+
+## License
+
+Copyright © 2026 Kanwei Li
+
+Distributed under the MIT License.
