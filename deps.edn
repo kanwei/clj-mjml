@@ -13,5 +13,9 @@
                        {:mvn/version "0.10.12"}
                        slipset/deps-deploy {:mvn/version "0.2.2"}}
           :ns-default build}
+  :nrepl
+  {:extra-paths ["test"]
+   :extra-deps {nrepl/nrepl {:mvn/version "1.5.1"}}
+   :main-opts   ["-m" "nrepl.cmdline" "--port" "62000"]}
   :outdated {:extra-deps {com.github.liquidz/antq {:mvn/version "2.11.1276"}}
              :main-opts  ["-m" "antq.core"]}}}
