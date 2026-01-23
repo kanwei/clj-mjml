@@ -7,13 +7,13 @@ A Clojure library for rendering [MJML](https://mjml.io/) email templates to HTML
 Add to your `deps.edn`:
 
 ```clojure
-{:deps {net.clojars.clj-mjml/mjml {:mvn/version "1.0.0"}}}
+{:deps {com.github.kanwei/clj-mjml {:mvn/version "0.1.0"}}}
 ```
 
 Or to your `project.clj`:
 
 ```clojure
-[net.clojars.clj-mjml/mjml "1.0.0"]
+[com.github.kanwei/clj-mjml "0.1.0"]
 ```
 
 ## Quick Start
@@ -318,3 +318,33 @@ Copyright © 2025 Kanwei Li
 
 Distributed under the MIT License.
 
+
+### Building
+
+Run the project's CI pipeline and build a JAR:
+
+```bash
+$ clojure -T:build ci
+```
+
+This will produce an updated `pom.xml` file with synchronized dependencies inside the `META-INF`
+directory inside `target/classes` and the JAR in `target`. You can update the version (and SCM tag)
+information in generated `pom.xml` by updating `build.clj`.
+
+### Installing Locally
+
+Install it locally (requires the `ci` task be run first):
+
+```bash
+$ clojure -T:build install
+```
+
+### Deploying to Clojars
+
+Deploy to Clojars -- needs `CLOJARS_USERNAME` and `CLOJARS_PASSWORD` environment variables (requires the `ci` task be run first):
+
+```bash
+$ clojure -T:build deploy
+```
+
+Your library will be deployed to `com.github.kanwei/clj-mjml` on clojars.org.
